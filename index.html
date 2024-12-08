@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="title" content="kazi.xyz website">
+  <meta name="description" content="kazi.xyz an upcoming artist.">
+  <meta name="keywords" content="developer, c++, python">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="kazi.xyz">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kazi.xyz</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/fbb3c0506d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+    <div class="intro">
+      <h1>Hi, kazi.xyz here.</h1>
+      <h3>An upcoming artist.</h3><center>
+      <section class="projects" id="tech">
+        <div class="container">
+          <div class="project-grid">
+            <h2>My stats:</h2>
+            <div class="project-card">
+                <div class="counter" id="counter">0</div>
+
+                <script>
+                  function animateNumber(id, start, end, duration) {
+                      const element = document.getElementById(id);
+                      const range = end - start;
+                      const increment = range / (duration / 16);
+                      let current = start;
+                      const interval = setInterval(() => {
+                          current += increment;
+                          if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+                              clearInterval(interval);
+                              current = end; 
+                              element.textContent = `${Math.floor(current)}+`;
+                          } else {
+                              element.textContent = Math.floor(current); 
+                          }
+                      }, 16);
+                  }
+          
+                  animateNumber("counter", 0, 410, 1200);
+              </script>
+              <p>Montly listeners</p>
+              <div class="counter" id="countersongs">0</div>
+
+              <script>
+                function animateNumber(id, start, end, duration) {
+                    const element = document.getElementById(id);
+                    const range = end - start;
+                    const increment = range / (duration / 16);
+                    let current = start;
+                    const interval = setInterval(() => {
+                        current += increment;
+                        if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
+                            clearInterval(interval);
+                            current = end; 
+                            element.textContent = `${Math.floor(current)}+`;
+                        } else {
+                            element.textContent = Math.floor(current); 
+                        }
+                    }, 16);
+                }
+        
+                animateNumber("countersongs", 0, 20, 1200);
+            </script>
+            <p>Released songs</p>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="tech">
+        <div class="container">
+            <div class="song-card">
+              <h2>Listen to me!</h2>
+              <div class="project-card">
+                <h3>On Spotify <i class="fa-brands fa-spotify" style="color: #1DB954;"></i></i></h3>
+                <p>Use this platform to listen for free! All songs get released here.</p>
+                <center><a href="https://open.spotify.com/artist/13UdwNVRWYAv4jS5xJv3gc?si=Vyg-kInXR0iUQRYm-VroFg" target="_blank" class="button">Listen</a></center>
+              </div><br>
+              <div class="project-card">
+                <h3>On Apple Music <i class="fa-brands fa-itunes" style="color: #fc3c44;"></i></h3>
+                <p>Listen here for more high quality audio! All songs get released here.</p>
+                <center><a href="https://music.apple.com/us/artist/kazi-xyz/1760156210" target="_blank" class="button">Listen</a></center>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="tech">
+        <div class="container">
+            <div class="song-card">
+              <h2>My most listened to song!</h2>
+              <div class="project-card">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3TUWjDWrmbLmnP7qXC561t?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                <center><a href="https://open.spotify.com/track/6wYaCiEBStHNqSe6o0Tyoj?si=3397f8437a394ec5" target="_blank" class="button">Listen on Spotify</a></center>
+              </div><br>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="tech">
+        <div class="container">
+            <div class="about-card">
+              <h2>About me!</h2>
+              <div class="project-card">
+                <p>Author hasn't shared any about me.</p>
+              </div><br>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  </section>
+
+
+</body>
+</html>
